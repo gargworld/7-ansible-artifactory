@@ -38,8 +38,3 @@ services:
      - DB_PORT={{ db_port }}
      - DB_NAME={{ db_name }}
     restart: always
-    ulimits:
-      nproc: 65535
-      nofile:
-        soft: 32000
-        hard: 40000
